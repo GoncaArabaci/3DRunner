@@ -384,6 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774152709}
+  - component: {fileID: 774152710}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -399,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774152708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.257, z: -10}
+  m_LocalPosition: {x: 0, y: 0.257, z: -11.525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -407,6 +408,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774152710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774152708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081d057cec2827247ae2caf148993bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runningSpeed: 10
+  xSpeed: 250
+  limitX: 3.75
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +434,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -483,14 +500,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.2663027, y: -0.1340463, z: 0.0374264, w: 0.9537891}
-  m_LocalPosition: {x: 2.9, y: 3.7, z: -16.4}
+  m_LocalRotation: {x: 0.26596972, y: -0.13405937, z: 0.0373796, w: 0.95388204}
+  m_LocalPosition: {x: 1.4, y: 3.7, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 31.2, y: -16, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.16, y: -16, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837542f1aa3102541903d47d44d28cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTarget: {fileID: 774152709}
+  sSpeed: 2
+  dist: {x: 1.4, y: 3.7, z: -6}
+  lookTarget: {fileID: 774152709}
 --- !u!4 &1705440880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1fea952bf944e454f9ac1204b8111430, type: 3}
