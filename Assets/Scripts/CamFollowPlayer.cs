@@ -5,7 +5,7 @@ using UnityEngine;
 public class CamFollowPlayer : MonoBehaviour
 {
     public Transform cameraTarget;
-    public float sSpeed = 10f;
+    public float sSpeed = 10.0f;
     public Vector3 dist;
     public Transform lookTarget;
 
@@ -16,8 +16,15 @@ public class CamFollowPlayer : MonoBehaviour
         transform.position = sPos;
         transform.LookAt(lookTarget.position);
     }
-    private void Update()
+
+    void Start()
     {
-        
+
+    }
+
+
+    void Update()
+    {
+
     }
 }
